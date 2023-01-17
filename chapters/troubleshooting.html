@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Sample Jupyter Notebook &#8212; Use Case Template</title>
+    <title>Trouble Shooting &#8212; Use Case Template</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Trouble Shooting" href="troubleshooting.html" />
-    <link rel="prev" title="Creating Use Cases" href="explanation.html" />
+    <link rel="next" title="Glossaries" href="../reference/glossary.html" />
+    <link rel="prev" title="Sample Jupyter Notebook" href="example.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -145,9 +145,9 @@ const thebe_selector_output = ".output, .cell_output"
   Chapter Two
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="example.html">
    Sample Jupyter Notebook
   </a>
  </li>
@@ -157,9 +157,9 @@ const thebe_selector_output = ".output, .cell_output"
   Chapter Three
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="troubleshooting.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Trouble Shooting
   </a>
  </li>
@@ -231,35 +231,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/geo-smart/use_case_template/main?urlpath=lab/tree/book/chapters/example.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -299,7 +270,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/geo-smart/use_case_template/issues/new?title=Issue%20on%20page%20%2Fchapters/example.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/geo-smart/use_case_template/issues/new?title=Issue%20on%20page%20%2Fchapters/troubleshooting.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -316,7 +287,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/geo-smart/use_case_template/edit/main/book/chapters/example.ipynb"
+        <a href="https://github.com/geo-smart/use_case_template/edit/main/book/chapters/troubleshooting.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -344,7 +315,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/chapters/example.ipynb"
+        <a href="../_sources/chapters/troubleshooting.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -381,23 +352,126 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-issue-cannot-run-the-model-train-in-chapter-2-it-omits-error-xxxxx">
+   Example Issue: Cannot run the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     model.train
+    </span>
+   </code>
+   in Chapter 2. It omits error: “xxxxx”.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#environment">
+     Environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code">
+     Code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#error">
+     Error
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diagnose">
+     Diagnose
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution">
+     Solution
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Sample Jupyter Notebook</h1>
+                <h1>Trouble Shooting</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-issue-cannot-run-the-model-train-in-chapter-2-it-omits-error-xxxxx">
+   Example Issue: Cannot run the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     model.train
+    </span>
+   </code>
+   in Chapter 2. It omits error: “xxxxx”.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#environment">
+     Environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code">
+     Code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#error">
+     Error
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diagnose">
+     Diagnose
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution">
+     Solution
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -405,24 +479,42 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sample-jupyter-notebook">
-<h1>Sample Jupyter Notebook<a class="headerlink" href="#sample-jupyter-notebook" title="Permalink to this headline">#</a></h1>
-<p>Loading sample data from __</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: code here</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="trouble-shooting">
+<h1>Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this headline">#</a></h1>
+<p>This page lists all the issues we have met when creating or following tutorials.</p>
+<p>If you have no issues with running the tutorials, you can skip this chapter. It is very likely that some platform specific issues happen now and then, we would love to collect those knowledge to help students in future to avoid wasting time on them.</p>
+<p>In this chapter, each section should address one techincal issue/concern. Please list your running environment in many details as possible. The following is an example:</p>
+<section id="example-issue-cannot-run-the-model-train-in-chapter-2-it-omits-error-xxxxx">
+<h2>Example Issue: Cannot run the <code class="docutils literal notranslate"><span class="pre">model.train</span></code> in Chapter 2. It omits error: “xxxxx”.<a class="headerlink" href="#example-issue-cannot-run-the-model-train-in-chapter-2-it-omits-error-xxxxx" title="Permalink to this headline">#</a></h2>
+<section id="environment">
+<h3>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">#</a></h3>
+<p>Machine: Apple M1 laptop
+Python: 3.10
+Conda: 4.12
+Scikit-learn: 1.0.2
+…</p>
+</section>
+<section id="code">
+<h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h3>
+<p>Line 1xxx in Chapter 2 (link)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<p>Plot the data using __</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: code here</span>
-</pre></div>
-</div>
-</div>
-</div>
+</section>
+<section id="error">
+<h3>Error<a class="headerlink" href="#error" title="Permalink to this headline">#</a></h3>
+<p>raised Error xxxx</p>
+</section>
+<section id="diagnose">
+<h3>Diagnose<a class="headerlink" href="#diagnose" title="Permalink to this headline">#</a></h3>
+<p>This might be caused by the incompatibility among xxxx</p>
+</section>
+<section id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h3>
+<p>Please remove xxx, install xxx, and do xxx to try again.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -452,17 +544,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="explanation.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="example.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Creating Use Cases</p>
+            <p class="prev-next-title">Sample Jupyter Notebook</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="troubleshooting.html" title="next page">
+    <a class='right-next' id="next-link" href="../reference/glossary.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Trouble Shooting</p>
+        <p class="prev-next-title">Glossaries</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
