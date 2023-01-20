@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Creating Use Cases" href="explanation.html" />
+    <link rel="next" title="Motivation (Science or Utility)" href="motivation.html" />
     <link rel="prev" title="Welcome to the GeoSMART Jupyter Book!" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -135,8 +135,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="explanation.html">
-   Creating Use Cases
+  <a class="reference internal" href="motivation.html">
+   Motivation (Science or Utility)
   </a>
  </li>
 </ul>
@@ -147,14 +147,122 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="example.html">
-   Sample Jupyter Notebook
+  <a class="reference internal" href="methods.html">
+   Machine Learning Methods and Tools
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Chapter Three
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="data.html">
+   Data Preparation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Four
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="development.html">
+   Model Development and Paramter Tuning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Five
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="training.html">
+   Model Training
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Six
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="evaluation.html">
+   Performance Evaluation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Seven
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow.html">
+   Workflow Management / Cloud Computing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Eight
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="reproducibility.html">
+   Reproducibility
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Nine
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusion.html">
+   Discussion / Conclusion
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Ten (optional)
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="todo.html">
+   Try something on your own
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Eleven (optional)
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="questions.html">
+   Open questions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapter Twelve (optional)
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -166,13 +274,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Chapter Four
+  Chapter Thirteen
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="discussion.html">
-   Discussion
+  <a class="reference internal" href="example.html">
+   Sample Jupyter Notebook
   </a>
  </li>
 </ul>
@@ -498,8 +606,8 @@ If none of the above options work for you, please contact us directly to discuss
 </section>
 <section id="technical-details">
 <h2>Technical Details<a class="headerlink" href="#technical-details" title="Permalink to this headline">#</a></h2>
-<p>Creating a use case book can either be done by forking the use case template repository, or by cloning and following some extra set up steps.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">.github</span></code> folder which will be cloned already contains the github actions that will handle CI/CD deployment to github pages. However, the github pages branch of your repository must be created and properly set up.</p>
+<p>Creating a use case book can either be done by navigating use case template repository and clicking the “use as template” button.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.github</span></code> folder already contains the github actions that will handle CI/CD deployment to github pages. There is no need to create a gh-pages branch, the first run of the github actions should handle that automatically.</p>
 </section>
 </section>
 
@@ -537,10 +645,10 @@ If none of the above options work for you, please contact us directly to discuss
             <p class="prev-next-title">Welcome to the GeoSMART Jupyter Book!</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="explanation.html" title="next page">
+    <a class='right-next' id="next-link" href="motivation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Creating Use Cases</p>
+        <p class="prev-next-title">Motivation (Science or Utility)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
