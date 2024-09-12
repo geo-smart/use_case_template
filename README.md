@@ -35,7 +35,7 @@ In the `book` directory, update the `_config.yml` file with some basic informati
 - `myst_substitutions:` `website_url: `
 - `repository:` `url: `
 
-Note that the values for `website_url` and `url` above will NOTE be the same. The `website_url` is the url to the rendered Jupyter Book website (e.g. `https://example.github.io/my-jupyterbook`), while `repository:` `url:` is the url to the GitHub repository (e.g. `https://github.com/example/my-jupyterbook`). You can leave all the other configuration options unchanged for now.
+Note that the values for `website_url` and `url` above will NOT be the same. The `website_url` is the url to the rendered Jupyter Book website (e.g. `https://example.github.io/my-jupyterbook`), while `repository:` `url:` is the url to the GitHub repository (e.g. `https://github.com/example/my-jupyterbook`). You can leave all the other configuration options unchanged for now.
 
 ### Setup GitHub Action to build the JupyterBook
 
@@ -43,7 +43,7 @@ In your repository *Settings* (gear icon on top of your repository's page), go t
 
 Under the *Build and deployment* settings, click on the dropdown menu below *Source* and select *GitHub Actions*.
 
-Your JupyterBook is now configured to build and deploy following each new commit you make to the repository. Note: The file that runs the build and deploy action is located at `/.github/workflows/publish.yml` but **you do not need to make any changes to this file**.
+Your JupyterBook is now configured to build and deploy following each new commit you make to the repository. Note: The file that runs the build and deploy action is located at `/.github/actions/buildresources/action.yaml` but **you do not need to make any changes to this file**.
 
 If a commit fails to produce a new version of the Book, go to the *Actions* tab on the GitHub repository page to read the action logs and diagnose errors (failed actions will have a red icon with an X next to them).
 
