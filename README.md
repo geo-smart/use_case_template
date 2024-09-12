@@ -32,9 +32,10 @@ With your new use case repository, you can choose to clone the repository to wor
 In the `book` directory, update the `_config.yml` file with some basic information:
 - `title: `
 - `author: `
+- `myst_substitutions:` `website_url: `
 - `repository:` `url: `
 
-You can leave all the other configuration options unchanged for now.
+Note that the values for `website_url` and `url` above will NOTE be the same. The `website_url` is the url to the rendered Jupyter Book website (e.g. `https://example.github.io/my-jupyterbook`), while `repository:` `url:` is the url to the GitHub repository (e.g. `https://github.com/example/my-jupyterbook`). You can leave all the other configuration options unchanged for now.
 
 ### Setup GitHub Action to build the JupyterBook
 
