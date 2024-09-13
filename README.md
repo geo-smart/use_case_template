@@ -16,14 +16,14 @@ This repository is a template for creating a GeoSMART use case book. These use t
 
 ### Create a new repository from this template
 1. On the top right of the page, click *Use this template* and then *Create a new repository*
-2. This should take you to a new page titled *Create a new repository*
-3. Double check that the dropdown menu below *Repository template* says either *geo-smart/simple-template* or *geo-smart/use_case_template*
-4. Leave the box unchecked for *Include all branches*
-5. For *Owner* select your github user account, or another organization to create the new repository under
-6. Give your use case repository a name under *Repository name*
-7. Add a short *Description*
-8. Select the option for *Public*
-9. Finally, click *Create repository*
+1. This should take you to a new page titled *Create a new repository*
+1. Double check that the dropdown menu below *Repository template* says either *geo-smart/simple-template* or *geo-smart/use_case_template*
+1. Leave the box unchecked for *Include all branches*
+1. For *Owner* select your github user account, or another organization to create the new repository under
+1. Give your use case repository a name under *Repository name*
+1. Add a short *Description*
+1. Select the option for *Public*
+1. Finally, click *Create repository*
 
 ### Configure your new use case repository
 
@@ -39,9 +39,11 @@ Note that the values for `website_url` and `url` above will NOT be the same. The
 
 ### Setup GitHub Action to build the JupyterBook
 
-In your repository *Settings* (gear icon on top of your repository's page), go to the *Pages* section.
+1. In your repository *Settings* (gear icon on top of your repository's page), go to the *Pages* section.
+1. Under the *Build and deployment* settings, click on the dropdown menu below *Source* and select *GitHub Actions*.
+1. Then go to the *Actions* section of the repository's settings.
+1. Under the *Workflow permissions* settings, select the *Read and write permissions* option.
 
-Under the *Build and deployment* settings, click on the dropdown menu below *Source* and select *GitHub Actions*.
 
 Your JupyterBook is now configured to build and deploy following each new commit you make to the repository. Note: The file that runs the build and deploy action is located at `/.github/actions/buildresources/action.yaml` but **you do not need to make any changes to this file**.
 
