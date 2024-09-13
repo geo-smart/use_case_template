@@ -40,7 +40,8 @@ Note that the values for `website_url` and `url` above will NOT be the same. The
 ### Setup GitHub Action to build the JupyterBook
 
 1. In your repository *Settings* (gear icon on top of your repository's page), go to the *Pages* section.
-1. Under the *Build and deployment* settings, click on the dropdown menu below *Source* and select *GitHub Actions*.
+1. Under the *Build and deployment* settings, click on the dropdown menu below *Source* and select *Deploy from a branch*.
+1. Under the *Branch* section that appears below, change the selected branch from `main` to `gh-pages` in the first dropdown menu. Leave the second dropdown menu set to `/ (root)`
 1. Then go to the *Actions* section of the repository's settings.
 1. Under the *Workflow permissions* settings, select the *Read and write permissions* option.
 
