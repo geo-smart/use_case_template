@@ -68,5 +68,5 @@ Now that you have completed the creation, configuration, and setup steps, you ca
 We recommend that you refer to the JupyterBook documentation on the following topics to help your organize your content:
 * [Structure](https://jupyterbook.org/en/stable/structure/toc.html) and [Configure](https://jupyterbook.org/en/stable/structure/configure.html) the table of contents, `book/_toc.yml`
 * [Markdown](https://jupyterbook.org/en/stable/file-types/markdown.html) and [Jupyter Notebook](https://jupyterbook.org/en/stable/file-types/notebooks.html) files for the content in `book/chapters/`
-* Embeding [images and figures](https://jupyterbook.org/en/stable/content/figures.html) from `book/img/`, and writing inline [math and equations](https://jupyterbook.org/en/stable/content/math.html)
+* Embedding [images and figures](https://jupyterbook.org/en/stable/content/figures.html) from `book/img/`, and writing inline [math and equations](https://jupyterbook.org/en/stable/content/math.html)
 * [Links and references](https://jupyterbook.org/en/stable/content/references.html), [special content blocks](https://jupyterbook.org/en/stable/content/content-blocks.html), and more ways to [structure chunks of content](https://jupyterbook.org/en/stable/content/components.html)
